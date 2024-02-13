@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Date Proposal</title>
+    <style>
+        body {
+            background-color: #ffecf2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .proposal-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff5066;
+            font-family: 'Arial', sans-serif;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #yesButton {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #noButton {
+            background-color: #ff5066;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="proposal-container">
+        <h1>Happy Valentine's Day</h1>
+        <p>Can we go on a date?</p>
+        <button id="yesButton" onclick="response('yes')">Yes</button>
+        <button id="noButton" onclick="response('no')">No</button>
+    </div>
+
+    <script>
+        function response(answer) {
+            if (answer === 'yes') {
+                alert("Salamat sa pagpayag Bhelhabs iloveyou 🌹");
+            } else if (answer === 'no') {
+                alert("Okay lang kung ayaw mo hindi pa siguro right time");
+            }
+        }
+    </script>
+</body>
+</html>
